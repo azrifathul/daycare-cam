@@ -28,4 +28,4 @@ export const config = {
   ],
 };
 
-export const baseUrl = "https://coba-cctv.herokuapp.com/";
+export const baseUrl = "https://daycare-server1.herokuapp.com/";
