@@ -1,0 +1,72 @@
+.monitoring-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  select {
+    display: none;
+  }
+  video {
+    border-radius: 16px;
+    display: none;
+  }
+
+  .open-video {
+    display: flex;
+  }
+
+  .video-container {
+    position: relative;
+    padding: 16px;
+  }
+
+  .button-container__monitoring-static {
+    position: static !important;
+  }
+  .hide-button,
+  .close-button {
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    background: #00bcd4;
+    margin-top: 36px;
+    cursor: pointer;
+  }
+
+  .button-container__monitoring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 220px;
+  }
+
+  .close-button {
+    background: #f15c60;
+  }
+
+  @media (max-width: 1024px) {
+    video {
+      width: 100% !important;
+    }
+
+    .button-container__monitoring {
+      position: static;
+    }
+  }
+}
